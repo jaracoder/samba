@@ -9,7 +9,7 @@ Samba es un componente importante para integrar sin problemas servidores y escri
 
 # Instalación
 
-Para instalar Samba ejecutar el siguiente comando:
+Para realizar la instalación ejecutar el siguiente comando:
 ```
 $ sudo apt-get update
 $ sudo apt-get install samba -y
