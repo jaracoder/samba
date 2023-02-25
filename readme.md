@@ -40,14 +40,20 @@ dns proxy = no
 ```
 
 ## Verificar archivo smb.config
-Es importante validar el contenido del fichero `smb.conf` usando el programa testparm. Si testparm se ejecuta correctamente se listarán los servicios cargados y si no dará un mensaje de error. Introduzca el siguiente comando:
+Es importante validar el contenido del fichero `smb.conf` usando el programa testparm. Si testparm se ejecuta correctamente se listarán los servicios cargados, en caso contrario devolverá un mensaje de error. Introduzca el siguiente comando:
 
 ```
-testparm /etc/samba/smb.conf
+$ testparm /etc/samba/smb.conf
 ```
 
 <img src="https://user-images.githubusercontent.com/28895475/221375077-23ab7062-c6db-4d22-a25f-3c4e0e77e6ea.png" data-canonical-src="https://user-images.githubusercontent.com/28895475/221375077-23ab7062-c6db-4d22-a25f-3c4e0e77e6ea.png" width="480" height="325"  />
 
+La utilidad testparm también se puede utilizar para generar un archivo smb.conf totalmente optimizado a partir de un archivo maestro de configuración y documentación ejecutando el siguiente comando:
+
+```
+$ testparm -s /etc/samba/smb.conf.master > smb.conf
+```
+La idea es tener un fichero de configuración maestro con toda la documentación de las instrucciones para el funcionamiento de nuestro servidor Samba a modo de desarrollo y otro optimizado sin comentarios que se utilice en producción.
 
 
 ## Compartir directorio local
