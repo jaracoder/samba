@@ -1,3 +1,5 @@
+![Samba_logo_2010 svg](https://user-images.githubusercontent.com/28895475/221364397-12def956-ee2b-4b79-91d8-203a1c077c4a.png)
+
 # Introducción
 Samba es el conjunto estándar de programas de interoperabilidad de Windows para Linux y Unix.
 
