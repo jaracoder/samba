@@ -67,7 +67,7 @@ $ ls -l
 
 Para configurar una carpeta compartida en modo escritura sin seguridad permitiendo el acceso invitado añadir la misma configuración 
 que el apartado anterior de (Compartir directorio local), pero con la `path` correspondiente y utilizando la propiedad `force user`
-para que funcione correctamnente de la siguiente manera:
+para que funcione correctamente de la siguiente manera:
 ```
 path = /media/[username]/cine
 force user = [username]
