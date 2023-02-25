@@ -39,6 +39,17 @@ map to guest = bad user
 dns proxy = no
 ```
 
+## Verificar archivo smb.config
+Es importante validar el contenido del fichero `smb.conf` usando el programa testparm. Si testparm se ejecuta correctamente se listarán los servicios cargados y si no dará un mensaje de error. Introduzca el siguiente comando:
+
+```
+testparm /etc/samba/smb.conf
+```
+
+<img src="https://user-images.githubusercontent.com/28895475/221375077-23ab7062-c6db-4d22-a25f-3c4e0e77e6ea.png" data-canonical-src="https://user-images.githubusercontent.com/28895475/221375077-23ab7062-c6db-4d22-a25f-3c4e0e77e6ea.png" width="480" height="325"  />
+
+
+
 ## Compartir directorio local
 
 Para configurar una carpeta compartida en modo escritura sin seguridad permitiendo el acceso invitado añadir la siguiente configuración:
