@@ -24,7 +24,9 @@ $ smbd --version
 
 
 # Configuración
-El archivo de configuración es único y está ubicado en `/etc/samba/smb.conf`.
+El archivo de configuración es único y está ubicado en `/etc/samba/smb.conf`. 
+
+Puedes verificar la ruta del fichero de configuración ejecutando el comando `smbd -b | grep smb.conf`.
 
 Algunas configuraciones globales que se pueden añadir son las siguientes:
 ```
